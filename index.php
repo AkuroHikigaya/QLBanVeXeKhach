@@ -35,7 +35,7 @@
           <ul class="left-info">
             <li><a href="#"><i class="fa-solid fa-envelope"></i>abc@gmail.com </a></li>
             <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
-            <li><a href="#"><i class="fa-solid fa-right-to-bracket"></i>Đăng Nhập</a></li>
+            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Đăng Nhập</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -78,7 +78,7 @@
               <a class="nav-link" href="contact.html">Hóa Đơn</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="one-page.html">Đăng ký</a>
+              <a class="nav-link" href="register.html">Đăng ký</a>
             </li>
           </ul>
         </div>
