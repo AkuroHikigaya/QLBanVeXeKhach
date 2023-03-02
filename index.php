@@ -33,9 +33,9 @@
       <div class="row">
         <div class="col-md-8 col-xs-12">
           <ul class="left-info">
-            <li><a href="#"><i class="fa-solid fa-envelope"></i>abc@gmail.com </a></li>
-            <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
-            <li><a href="login.html"><i class="fa-solid fa-right-to-bracket"></i>Đăng Nhập</a></li>
+            <li li><a href="mailto:abc@gmail.com"><i class="fa-solid fa-envelope"></i>abc@gmail.com </a></li>
+            <li><a href="tel:090-080-0760"><i class="fa fa-phone"></i>090-080-0760</a></li>
+            <li><a href="login.php"><i class="fa-solid fa-right-to-bracket"></i>Đăng Nhập</a></li>
           </ul>
         </div>
         <div class="col-md-4">
@@ -63,22 +63,20 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#top">trang chủ
-                <span class="sr-only">(current)</span>
-              </a>
+          <li class="nav-item active">
+              <a class="nav-link" href="index.php">Trang chủ <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">Lịch Trình</a>
+              <a class="nav-link" href="about.php">Lịch Trình</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="services.html">Liên Hệ</a>
+              <a class="nav-link" href="services.php">Liên Hệ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Hóa Đơn</a>
+              <a class="nav-link" href="contact.php">Hóa Đơn</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="register.html">Đăng ký</a>
+            <li class="nav-item ">
+              <a class="nav-link" href="register.php">Đăng ký </a>
             </li>
           </ul>
         </div>
@@ -97,14 +95,7 @@
       
     </div>
   </div>
-  <div style="position: relative;">
-    <img src="image.jpg" alt="">
-    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 50px; background-color: rgba(224, 110, 110, 0.603);">
-      <marquee behavior="scroll" direction="left" scrollamount="10">
-        <h1 class="font-weight-bold" style="color: darkgreen;">Chào mừng bạn đến với hệ thống bán vé xe ABC</h1>
-      </marquee>
-    </div>
-  </div>
+
 
   
   <!-- Cái khung, bo gốc -->
