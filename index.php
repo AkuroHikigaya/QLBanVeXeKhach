@@ -54,7 +54,7 @@
   <header class="">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="index.php">
           <h2>Hệ thống xe abc</h2>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -67,7 +67,7 @@
               <a class="nav-link" href="index.php">Trang chủ <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">Lịch Trình</a>
+              <a class="nav-link" href="lichtrinh.php">Lịch Trình</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="services.php">Liên Hệ</a>
@@ -428,8 +428,12 @@
             <li><a href="#"><i class="fa fa-behance"></i></a></li>
           </ul>
           <p>
-            Địa chỉ: 102abc, Trần Quang Khải, P.Cái Khế, Q.Ninh Kiều, TP.Cần Thơ
-            <br> Email: abc@gmail.com
+            Địa chỉ:
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Địa chỉ:Trần Quang Khải, P.Cái Khế, Q.Ninh Kiều, TP.Cần Thơ" target="_blank" class="address">102abc, Trần Quang Khải, P.Cái Khế, Q.Ninh Kiều, TP.Cần Thơ</a>
+          </p>
+          <p>
+            Email:
+                <a href="mailto:abc@gmail.com" class="title">abc@gmail.com</a>
           </p>
         </div>
         <div class="col-md-3 footer-item">
@@ -444,11 +448,11 @@
         <div class="col-md-3 footer-item">
           <h4>Đi đến trang</h4>
           <ul class="menu-list">
-            <li><a href="#">Trang Chủ</a></li>
-            <li><a href="#">Lịch trình</a></li>
-            <li><a href="#">Liên Hệ</a></li>
-            <li><a href="#">Đăng Ký</a></li>
-            <li><a href="#">Đăng nhập</a></li>
+            <li><a href="index.php">Trang Chủ</a></li>
+            <li><a href="lichtrinh.php">Lịch trình</a></li>
+            <li><a href="services.php">Liên Hệ</a></li>
+            <li><a href="register.php">Đăng Ký</a></li>
+            <li><a href="login.php">Đăng nhập</a></li>
           </ul>
         </div>
         <div class="col-md-3 footer-item">

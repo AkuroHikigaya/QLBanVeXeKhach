@@ -53,7 +53,7 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><h2>Hệ thống xe abc</h2></a>
+          <a class="navbar-brand" href="index.php"><h2>Hệ thống xe abc</h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -63,7 +63,7 @@
               <a class="nav-link" href="index.php">Trang chủ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">Lịch Trình</a>
+              <a class="nav-link" href="lichrinh.php">Lịch Trình</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="services.php">Liên Hệ <span class="sr-only">(current)</span></a>
@@ -153,7 +153,7 @@
               </p> 
               <p>
                   Email:
-                <a href="abc@gmail.com" class="title">abc@gmail.com</a>
+                <a href="mailto:abc@gmail.com" class="title">abc@gmail.com</a>
               </p>
               <p class="hotline">
                 Tổng đài đặt vé:
@@ -172,23 +172,23 @@
             <div class="owl-partners owl-carousel">
             
               <div class="partner-item">
-                <img src="assets/images/Logo.jpg" title="1" alt="1">
+                <img src="assets/images/CanTho.jpg" title="1" alt="1">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/Logo.jpg" title="2" alt="2">
+                <img src="assets/images/CaMau.jpg" title="2" alt="2">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/Logo.jpg" title="3" alt="3">
+                <img src="assets/images/DaNang.jpg" title="3" alt="3">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/Logo.jpg" title="4" alt="4">
+                <img src="assets/images/NhaTrang.jpg" title="4" alt="4">
               </div>
               
               <div class="partner-item">
-                <img src="assets/images/Logo.jpg" title="5" alt="5">
+                <img src="assets/images/SaiGon.jpg" title="5" alt="5">
               </div>
               
             </div>
@@ -214,8 +214,12 @@
               <li><a href="#"><i class="fa fa-behance"></i></a></li>
             </ul>
             <p>
-              Địa chỉ: 102abc, Trần Quang Khải, P.Cái Khế, Q.Ninh Kiều, TP.Cần Thơ
-              <br> Email: abc@gmail.com
+              Địa chỉ: 
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Địa chỉ:Trần Quang Khải, P.Cái Khế, Q.Ninh Kiều, TP.Cần Thơ" target="_blank" class="address">102abc, Trần Quang Khải, P.Cái Khế, Q.Ninh Kiều, TP.Cần Thơ</a>
+            </p>
+            <p>
+              Email:
+               <a href="mailto:abc@gmail.com" class="title">abc@gmail.com</a>
             </p>
           </div>
           <div class="col-md-3 footer-item">
@@ -230,11 +234,11 @@
           <div class="col-md-3 footer-item">
             <h4>Đi đến trang</h4>
             <ul class="menu-list">
-              <li><a href="#">Trang Chủ</a></li>
-              <li><a href="#">Lịch trình</a></li>
-              <li><a href="#">Liên Hệ</a></li>
-              <li><a href="#">Đăng Ký</a></li>
-              <li><a href="#">Đăng nhập</a></li>
+              <li><a href="index.php">Trang Chủ</a></li>
+              <li><a href="lichtrinh.php">Lịch trình</a></li>
+              <li><a href="services.php">Liên Hệ</a></li>
+              <li><a href="register.php">Đăng Ký</a></li>
+              <li><a href="login.php">Đăng nhập</a></li>
             </ul>
           </div>
           <div class="col-md-3 footer-item">
