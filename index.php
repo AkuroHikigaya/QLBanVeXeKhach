@@ -33,7 +33,7 @@
       <div class="row">
         <div class="col-md-8 col-xs-12">
           <ul class="left-info">
-            <li li><a href="mailto:abc@gmail.com"><i class="fa-solid fa-envelope"></i>abc@gmail.com </a></li>
+            <li><a href="mailto:abc@gmail.com"><i class="fa-solid fa-envelope"></i>abc@gmail.com </a></li>
             <li><a href="tel:090-080-0760"><i class="fa fa-phone"></i>090-080-0760</a></li>
             <li><a href="login.php"><i class="fa-solid fa-right-to-bracket"></i>Đăng Nhập</a></li>
           </ul>

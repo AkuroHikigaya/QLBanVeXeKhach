@@ -64,6 +64,21 @@
             <p>Doanh thu theo khách:</p>
             <p>Doanh thu theo tuyến:</p>
             
+            <ul class="nav nav-pills nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Longer nav link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+
             
             <div class="tab">
                 <button class="tablinks" onclick="openTable(event, 'chuyenxe')">Số lượng chuyến xe</button>
@@ -73,29 +88,33 @@
 
             <div id="chuyenxe" class="tabcontent">
                 <h3>Số lượng chuyến xe</h3>
-                <table>
+                <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Số thứ tự</th>
-                            <th>Trạng thái</th>
-                            <th>Tổng chuyến xe</th>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Tháng 1</td>
-                            <td>10</td>
-                            <td>100</td>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
                         </tr>
                         <tr>
-                            <td>Tháng 2</td>
-                            <td>20</td>
-                            <td>120</td>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
                         </tr>
                         <tr>
-                            <td>Tháng 3</td>
-                            <td>30</td>
-                            <td>150</td>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
                         </tr>
                     </tbody>
                 </table>
