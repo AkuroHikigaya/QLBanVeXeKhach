@@ -444,9 +444,25 @@ header .navbar {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	margin-top: 50px;
 	color: #EE6D4A;
+	text-decoration: line-through;
+	
 	
 }
+.texts[data-v-322ee1ea] {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px
+}
+.sumary-item[data-v-322ee1ea] {
+    display: flex;
+    flex-direction: row
+}
 
+.title[data-v-322ee1ea] {
+    font-size: 50px;
+    font-weight: 700;
+    color: #f15a24
+}
 /* Partners Style */
 
 .contact-partners {
@@ -493,8 +509,9 @@ header .navbar {
 }
 .title3{
 	font-family: 'Times New Roman', Times, serif;
-	color: #EE6D4A;
+	color: #FFA08A;
 }
+
 .text21{
 	margin-left: 100px;
 	margin-top: 20px;
