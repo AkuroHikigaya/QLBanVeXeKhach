@@ -180,8 +180,47 @@ banner
 	-webkit-filter: grayscale(1);    
 	filter: brightness(50%); 
   }
-/* Sub Header Style */
+/*
+lich trinh
+*/
+.tuyenxe {
+	margin: 2rem;
+}
+.tuyenxe .timtuyen{
+	margin-bottom: 1rem;
+}
+/*
+kt lich trinh
+*/
+/*
+Dangky
+*/
+.dangky{
+    width: 60rem;
+  }
+  
+  .formdangky{
+      max-width: 100%;
+     background-color:#ffffff;
+      color: #000000;
+      padding: 2rem;
+	  border: 0.2rem solid var(--main-color);;
+  }
+  
+  .error{
+      color: #9d0d1c;
+      font-size: 1.2rem;
+  }
 
+#hredit hr{
+  width: 0.2rem !important;
+  height: 30rem;
+  background-color: black;
+}
+
+/* kt
+Dangky
+*/
 .sub-header {
 	background-color:var(--main-color);
 	height: 46px;

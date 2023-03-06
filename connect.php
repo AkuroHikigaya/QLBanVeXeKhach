@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "qlbvxk";
+$dbname = "qlbanvexe";
 
 
 

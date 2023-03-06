@@ -3,7 +3,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "qlbvxk";
+$dbname = "qlbanvexe";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if (!$conn) {
@@ -19,7 +19,7 @@ echo '<select class="form-select1 text-muted text-center" style="border: none" i
 echo '<option selected text-muted>Chọn địa điểm</option>';
 if (mysqli_num_rows($result) > 0) {
   while($row = mysqli_fetch_assoc($result)) {
-    echo '<option value="'.$row["MATINH"].'">'.$row["TENTINH"].' ('.$row["QUAN_HUYEN"].')</option>';
+    echo '<option value="'.$row["MATINH"].'">'.$row["TENTINH"].' ('.$row["MATINH"].')</option>';
   }
 }
 echo '</select>';
