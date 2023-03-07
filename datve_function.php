@@ -1,25 +1,33 @@
 <?php
-    if (isset($_GET["function"]) && $_GET["function"] == "hello") {
+    if (isset($_GET["function"]) && $_GET["function"] == "get_distance") {
         // Gọi hàm PHP và trả về kết quả
-        echo get_distance();
+        $start = $_GET["start"];
+        $end = $_GET["end"];
+        echo get_distance($start, $end);
     }
 
-    function get_distance() {
+    function get_distance($diemdi, $diemden) {
         // Kết nối đến cơ sở dữ liệu
         $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "qlbanvexe";
 
+        
+
         $conn = new mysqli($servername, $username, $password, $dbname);
         if (!$conn) {
             die("Kết nối đến cơ sở dữ liệu không thành công: " . mysqli_connect_error());
         }
 
+        $sql_start = "";
+        $sql_end = "";
+
         //Lấy khoảng cách với thời gian
-        $sql_distance_time = "SELECT QUANGDUONG, TGDICHUYENTB FROM tuyenxe
-        WHERE tuyenxe.MABX = 'BAG2'
-        AND tuyenxe.BEN_MABX = 'BSC1'";
+        $sql_distance_time = "SELECT QUANGDUONG, TGDICHUYENTB 
+                                FROM tuyenxe
+                                WHERE tuyenxe.MABX 
+                                AND tuyenxe.BEN_MABX = (SELECT MABX FROM `benxe` WHERE MATINH = 'CT65')";
 
         $result_distance_time = $conn->query($sql_distance_time);
 

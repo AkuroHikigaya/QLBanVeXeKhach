@@ -185,7 +185,7 @@
                                             echo '<option selected text-muted>Chọn địa điểm</option>';
                                             if (mysqli_num_rows($result) > 0) {
                                                 while ($row = mysqli_fetch_assoc($result)) {
-                                                    echo '<option value="' . $row["TENTINH"] . '" data-id="'. $row["MATINH"] .'">' . $row["TENTINH"] . ' (' . $row["MATINH"] . ')</option>';
+                                                    echo '<option value="' . $row["TENTINH"] . '" data-id="' . $row["MATINH"] . '">' . $row["TENTINH"] . ' (' . $row["MATINH"] . ')</option>';
                                                 }
                                             }
                                             echo '</select>';
@@ -226,7 +226,7 @@
                                             echo '<option selected text-muted>Chọn địa điểm</option>';
                                             if (mysqli_num_rows($result) > 0) {
                                                 while ($row = mysqli_fetch_assoc($result)) {
-                                                    echo '<option value="' . $row["TENTINH"] . '" data-id="'. $row["MATINH"] .'">' . $row["TENTINH"] . ' (' . $row["MATINH"] . ')</option>';
+                                                    echo '<option value="' . $row["TENTINH"] . '" data-id="' . $row["MATINH"] . '">' . $row["TENTINH"] . ' (' . $row["MATINH"] . ')</option>';
                                                 }
                                             }
                                             echo '</select>';
@@ -440,8 +440,30 @@
         })
     </script>
 
+    <!-- chuyển tiếp -->
     <script>
+        // Lấy các bước và thanh tiến trình
+        const steps = document.querySelectorAll('.step-item');
+        const progressBar = document.getElementById('progress');
 
+        // Thiết lập sự kiện cho nút "Next"
+        document.getElementById('nextBtn').addEventListener('click', function() {
+            // Tìm bước đang được chọn
+            let currentStep = Array.from(steps).findIndex(step => step.querySelector('.step-button').getAttribute('aria-expanded') === 'true');
+
+            // Nếu bước hiện tại không phải là bước cuối cùng, chuyển đổi sang bước kế tiếp
+            if (currentStep < steps.length - 1) {
+                steps[currentStep].querySelector('.step-button').classList.remove('collapsed');
+                steps[currentStep].querySelector('.step-button').setAttribute('aria-expanded', 'false');
+                steps[currentStep + 1].querySelector('.step-button').classList.add('collapsed');
+                steps[currentStep + 1].querySelector('.step-button').setAttribute('aria-expanded', 'true');
+                progressBar.value = ((currentStep + 1) / (steps.length - 1)) * 100;
+            }
+        });
+    </script>
+
+
+    <script>
         // Lấy đối tượng
         var select_di = document.getElementById("diemdi");
         var select_den = document.getElementById("diemden");
@@ -462,6 +484,7 @@
             }
 
         }
+
         // Hàm in kết quả
         function printResult() {
 
@@ -471,7 +494,7 @@
             var valueB = select_den.value;
             var result = valueA + "->" + valueB;
             document.getElementById("diemdi-diemden").innerHTML = result;
-            
+
             var xmlhttp = new XMLHttpRequest();
 
             xmlhttp.onreadystatechange = function() {
@@ -480,12 +503,15 @@
                     document.getElementById("distance-time").innerHTML = this.responseText;
                 }
             };
+            var option_di = select_di.options[select_di.selectedIndex];
+            var start = option_di.dataset.id;
+            var option_den = select_den.options[select_den.selectedIndex];
+            var end = option_den.dataset.id;
 
             // gửi yêu cầu tới server
-            xmlhttp.open("GET", "datve_function.php?function=hello", true);
+            xmlhttp.open("GET", "datve_function.php?function=get_distance&start=" + start + "&end=" + end, true);
             xmlhttp.send();
         }
-
     </script>
 
 </body>
