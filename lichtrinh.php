@@ -167,7 +167,7 @@
            <tbody>
                <tr>
        ";
-       $sql1= "SELECT tentinh,matinh FROM tinhthanh";
+        $sql1= "SELECT tentinh,matinh FROM tinhthanh";
         $result1 = $conn->query($sql1);
 
         while($row = $result1->fetch_array()) {
