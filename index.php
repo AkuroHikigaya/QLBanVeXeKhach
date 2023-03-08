@@ -73,10 +73,10 @@
                             <a class="nav-link" href="services.php">Liên Hệ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.php">Hóa Đơn</a>
+                            <a class="nav-link" href="hoadon.php">Hóa Đơn</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="register.php">Đăng ký </a>
+                            <a class="nav-link" href="taikhoan.php">Đăng ký </a>
                         </li>
                     </ul>
                 </div>
@@ -343,7 +343,7 @@
     </div>
 
     <div>
-        <h1 class="tieude font-weight-bold">ABC - CHẤT LƯỢNG LÀ DANH DỰ</h1>
+        <h1 class="tieude font-weight-bold ">ABC - CHẤT LƯỢNG LÀ DANH DỰ</h1>
     </div>
 
     <div class="container">

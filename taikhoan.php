@@ -75,7 +75,7 @@
                             <a class="nav-link" href="services.html">Liên Hệ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Hóa Đơn</a>
+                            <a class="nav-link" href="hoadon.php">Hóa Đơn</a>
                         </li>
                         <li class="nav-item">
                             <a class="taikhoan.php" href="one-page.html">Đăng ký</a>
