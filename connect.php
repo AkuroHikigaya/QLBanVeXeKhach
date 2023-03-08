@@ -14,6 +14,5 @@ if ($conn->connect_error) {
 //hien thi loi neu ket noi khong duoc
   die("Connection failed: " . $conn->connect_error);
 }
-//neu ket noi thanh cong
-echo "Connected successfully";
+
 ?>
