@@ -7,12 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    
-
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="assets/css/sb-admin-2.css">
     <link rel="stylesheet" href="assets/css/sb-admin-2.min.css">
-    <link rel="stylesheet" href="assets/css/htqlxe.css">
     <!-- Custom styles for this page -->
     <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link
@@ -76,8 +73,8 @@
                 <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Màn hình đăng nhập:</h6>
-                        <a class="collapse-item" href="login.html">Đăng ký</a>
-                        <a class="collapse-item" href="register.html">Đăng nhập</a>
+                        <a class="collapse-item" href="taikhoan.php">Đăng ký</a>
+                        <a class="collapse-item" href="taikhoan.php">Đăng nhập</a>
                         <a class="collapse-item" href="forgot-password.html">Quên mật khẩu</a>
                         <div class="collapse-divider"></div>
                         <h6 class="collapse-header">Các trang khác:</h6>

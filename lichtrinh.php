@@ -75,7 +75,7 @@
                             <a class="nav-link" href="services.html">Liên Hệ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Hóa Đơn</a>
+                            <a class="nav-link" href="hoadon.php">Hóa Đơn</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="taikhoan.php">Đăng ký</a>
@@ -167,7 +167,7 @@
            <tbody>
                <tr>
        ";
-       $sql1= "SELECT tentinh,matinh FROM tinhthanh";
+        $sql1= "SELECT tentinh,matinh FROM tinhthanh";
         $result1 = $conn->query($sql1);
 
         while($row = $result1->fetch_array()) {
